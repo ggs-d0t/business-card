@@ -1,0 +1,45 @@
+body {
+    margin: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.pfp{
+    width:150px;
+}
+.card{
+    text-shadow:0px 0px 5px #007ea7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width:400px;
+    margin:0 auto;
+    justify-content: space-around;
+    padding:10px;
+    display:flex;
+    text-align:center;
+    color:#2b2839;
+    background-color:#9ad1d4;
+    border-bottom:5px solid #ccdbdc;
+}
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.card:hover {
+color: #494949 !important;
+border-radius: 50px;
+border-color: #494949 !important;
+transition: all 0.3s ease 0s;
+}
+
